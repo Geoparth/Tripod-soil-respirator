@@ -15,15 +15,16 @@
 //DC MOTOR=========================================================
 int newPos = 0; //new position of the shaft of the DC motor
 
-int encoderTick = 21;//value of encoder ticks on startup (value was obdained based on geometry of the device)
-float positionDC = 15.12;//position of the shaft of DC motor on startup in degrees
-int dutyDC;		//duty cycle of PWM signal that was used to drive the DC motor
-int minDTY = 30;				//Min value of duty cycle
-int maxDTY = 100;			//Max value of duty cycle
+int encoderTick = 21;        //value of encoder ticks on startup (value was obdained based on geometry of the device)
+int minDTY = 30;             //Min value of duty cycle
+int maxDTY = 100;            //Max value of duty cycle
+int dutyDC;                  //duty cycle of PWM signal that was used to drive the DC motor
+int minEncoder = 21;         //Min value of encoder ticks
+int maxEncoder = 479;        //Max value of encoder ticks
+
+float positionDC = 15.12;    //position of the shaft of DC motor on startup in degrees
 float minDeg = 15.12;		//Min position of DC motor shaft
 float maxDeg = 344.88;		//Max position of DC motor shaft
-int minEncoder = 21;		//Min value of encoder ticks
-int maxEncoder = 479;		//Max value of encoder ticks
 
 //PID for DC motor
 float DcKp = 0.01;			//proportional coefficient
